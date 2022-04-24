@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/sura_selector"
+    android:padding="15dp">
+
+
+    <TextView
+        android:id="@+id/tv_englishName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:text="name"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/tv_counter"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/aya"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Aya :"
+        app:layout_constraintEnd_toStartOf="@+id/tv_ProdigyNumber"
+        app:layout_constraintHorizontal_bias="0.969"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_englishName" />
+
+    <TextView
+        android:id="@+id/tv_ProdigyNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="4dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/tv_counter"
+        app:layout_constraintTop_toBottomOf="@+id/tv_englishName"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/tv_counter_selector"
+        android:gravity="center"
+        android:text="1"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_ArabicName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.927"
+        app:layout_constraintStart_toEndOf="@+id/tv_ProdigyNumber"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height=".1dp"
+        android:layout_margin="10dp"
+        android:background="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/tv_ProdigyNumber"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
