@@ -9,8 +9,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.ziaad.qrannapp.R
 import com.ziaad.qrannapp.model.SuraDetail
 
-class ListenSuraRecyclerViewAdapter :
-    RecyclerView.Adapter<ListenSuraRecyclerViewAdapter.listenViewHolder>() {
+class ListenSuraRecyclerViewAdapter:RecyclerView.Adapter<ListenSuraRecyclerViewAdapter.listenViewHolder>() {
 
     var suraDetailList: ArrayList<SuraDetail> = ArrayList()
 

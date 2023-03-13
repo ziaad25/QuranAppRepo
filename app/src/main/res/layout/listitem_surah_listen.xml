@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
-    <LinearLayout
+    <RelativeLayout
         android:id="@+id/card"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -17,23 +17,28 @@
         <TextView
 
             android:id="@+id/tv_numberAyaArabic"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1" />
+            android:layout_alignLeft="@id/tv_ayaArabic"
+            android:layout_toLeftOf="@id/tv_ayaArabic"
+
+
+            />
 
         <TextView
-            android:textColor="@color/black"
+            android:layout_alignParentRight="true"
+            android:textDirection="rtl"
             android:id="@+id/tv_ayaArabic"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="9"
             android:gravity="right"
-            android:text="ladfadf"
+            android:text="ldddddddddddddddddddddfddddddddddddadf"
+            android:textColor="@color/black"
             android:textSize="20sp"
             android:textStyle="bold"
             tools:ignore="RtlHardcoded" />
 
-    </LinearLayout>
+    </RelativeLayout>
 
     <LinearLayout
         android:id="@+id/linearEnglisAya"
